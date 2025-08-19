@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  color: white;
+}
+
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  width: 90%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  background-color: #383c4a;
+}
+
+h1, h2 {
+  color: #61dafb;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  text-align: left;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #282c34;
+  background-color: #61dafb;
+  transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #39c1f0;
+}
+
+button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+input[type="file"] {
+  color: white;
+}
+
+.hasil-list {
+  margin-top: 20px;
+}
+
+.hasil-list h3 {
+  text-align: center;
+  color: #61dafb;
+}
+
+.hasil-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hasil-list li {
+  background-color: #4a4d5a;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.hasil-list li .nama-pemenang {
+  font-weight: bold;
+  color: #61dafb;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.hasil-list li .keterangan-menang {
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.hasil-list li .hadiah-pemenang {
+  font-style: italic;
+  color: #b0e0e6;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.controls label, .controls select {
+  color: #fff;
+}
+
+.controls select {
+  background-color: #383c4a;
+  border: 1px solid #61dafb;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upload-box {
+  border: 1px dashed #61dafb;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+}
+
+.upload-box h3 {
+  margin-top: 0;
+}
+
+.hadiah-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hadiah-list {
+  background-color: #383c4a;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.hadiah-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #4a4d5a;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hadiah-item span {
+  font-weight: bold;
+  color: #fff;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.hadiah-item button {
+  white-space: nowrap;
+  margin-left: 10px;
+}
